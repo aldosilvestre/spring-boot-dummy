@@ -12,6 +12,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity security) throws Exception
     {
      //security.httpBasic().disable(); // Did work only for GET     
-     security.csrf().disable().authorizeRequests().anyRequest().permitAll(); // Works for GET, POST, PUT, DELETE
+     security.csrf().disable(); // Works for GET, POST, PUT, DELETE
     }
 }  
