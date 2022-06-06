@@ -8,6 +8,19 @@ public class UserAccess {
 	private String accessToken;
 	@JsonProperty("is_admin")
 	private Boolean isAdmin;
+	private String username;
+	
+	public Boolean isIsAdmin() {
+		return this.isAdmin;
+	}
+
+	public String getUsername() {
+		return this.username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
 	
 	public String getAccessToken() {
 		return accessToken;

@@ -1,22 +1,25 @@
 package com.example.demo.models;
 
-import java.time.LocalDate;
-
 public class FilterTicket {
 	
-	private int numero;
-	private LocalDate fecha;
-	public int getNumero() {
-		return numero;
+	private Long nro;
+	private String movie;
+
+	public Long getNro() {
+		return this.nro;
 	}
-	public void setNumero(int numero) {
-		this.numero = numero;
+
+	public void setNro(Long nro) {
+		this.nro = nro;
 	}
-	public LocalDate getFecha() {
-		return fecha;
+
+	public String getMovie() {
+		return this.movie;
 	}
-	public void setFecha(LocalDate fecha) {
-		this.fecha = fecha;
+
+	public void setMovie(String movie) {
+		this.movie = movie;
 	}
+
 
 }

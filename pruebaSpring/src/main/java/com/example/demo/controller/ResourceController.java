@@ -4,6 +4,9 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.List;
 
+import org.apache.catalina.connector.Response;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,8 +31,11 @@ public class ResourceController {
     }
 
     @PostMapping("reserves/new")
-    public void generateReserve(@RequestBody HashMap<String,String> body){
+    public ResponseEntity<String> generateReserve(@RequestBody HashMap<String,String> body){
         System.out.println(body);
+
+        return new ResponseEntity<String>(HttpStatus.NO_CONTENT);
+
     }
 
 
